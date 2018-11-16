@@ -1,0 +1,32 @@
+Compiling the code in Git repo 51f9640 (original code)
+C:\Users\Phil\Documents\Arduino\libraries\Adafruit_NeoTrellisM4-master\Adafruit_NeoTrellisM4.cpp: In function 'void tick_trellis()':
+
+C:\Users\Phil\Documents\Arduino\libraries\Adafruit_NeoTrellisM4-master\Adafruit_NeoTrellisM4.cpp:23:42: error: no matching function for call to 'Adafruit_Keypad::justPressed(int, bool)'
+
+   if(trellisKeypad.justPressed(i+1, false))
+
+                                          ^
+
+C:\Users\Phil\Documents\Arduino\libraries\Adafruit_NeoTrellisM4-master\Adafruit_NeoTrellisM4.cpp:23:42: note: candidate is:
+
+In file included from C:\Users\Phil\Documents\Arduino\libraries\Adafruit_NeoTrellisM4-master\Adafruit_NeoTrellisM4.h:5:0,
+
+                 from C:\Users\Phil\Documents\Arduino\libraries\Adafruit_NeoTrellisM4-master\Adafruit_NeoTrellisM4.cpp:1:
+
+C:\Users\Phil\Documents\Arduino\libraries\Adafruit_Keypad/Adafruit_Keypad.h:38:10: note: bool Adafruit_Keypad::justPressed(byte)
+
+     bool justPressed(byte key);
+
+          ^
+
+C:\Users\Phil\Documents\Arduino\libraries\Adafruit_Keypad/Adafruit_Keypad.h:38:10: note:   candidate expects 1 argument, 2 provided
+
+C:\Users\Phil\Documents\Arduino\libraries\Adafruit_NeoTrellisM4-master\Adafruit_NeoTrellisM4.cpp:28:18: error: 'class Adafruit_Keypad' has no member named 'clear'
+
+    trellisKeypad.clear();
+
+                  ^
+
+exit status 1
+Error compiling for board Adafruit Trellis M4 (SAMD51).
+
